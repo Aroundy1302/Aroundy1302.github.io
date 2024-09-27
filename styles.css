@@ -55,7 +55,7 @@ nav ul li a:hover {
 }
 
 /* Mobile styles */
-@media (max-width: 768px) {
+@media (max-width: 680px) {
     .nav-toggle {
         display: inline-block;
     }
