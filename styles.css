@@ -223,6 +223,45 @@ nav ul li a:hover {
     background-color: #242424;
 }
 
+.skills-section {
+    padding: 40px;
+    max-width: 800px; /* Center the skills section */
+    margin: auto;
+    background: white; /* Background for the skills section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.skill-item {
+    margin-bottom: 20px;
+    padding: 15px; /* Padding inside each skill item */
+    border: 2px solid #4caf50; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.progress-bar {
+    background-color: #e0e0e0; /* Background for progress bar */
+    border-radius: 5px;
+    overflow: hidden;
+    height: 30px; /* Height for progress bar */
+    width: 100%;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50; /* Color for the progress */
+    width: 0%; /* Set initial width to 0%, will be updated with inline style */
+    transition: width 0.5s ease; /* Smooth transition */
+}
+
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; /* Space between label and progress bar */
+    font-weight: bold; /* Bold text for labels */
+}
+
 footer {
     margin-top: 20px;
     color: #666;
