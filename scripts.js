@@ -1,18 +1,17 @@
-// Smooth scrolling to section
+// Smooth scroll to a section
 function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
 }
 
-// Select the toggle button and the navigation menu
-const navToggle = document.querySelector('.nav-toggle');
-const navList = document.querySelector('.nav-list');
-
-// Add click event listener to the toggle button
-navToggle.addEventListener('click', () => {
-    navList.classList.toggle('active'); // Toggle the 'active' class
+// Handling form submission
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert(`Thank you, ${form.name.value}! Your message has been sent.`);
+    form.reset();
 });
 
 function updateData() {
