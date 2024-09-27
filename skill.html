@@ -7,6 +7,31 @@
     <meta name="author" content="Your Name">
     <title>Skills</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic CSS for styling the skill section */
+        .skills-section {
+            padding: 20px;
+        }
+        .skill-item {
+            margin-bottom: 20px;
+        }
+        .progress-bar {
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 25px;
+            width: 100%;
+        }
+        .progress {
+            height: 100%;
+            background-color: #4caf50;
+            width: 0%; /* Set initial width to 0%, will be updated with inline style */
+        }
+        .skill-label {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,10 +47,31 @@
         </nav>
     </header>
 
-    <section>
+    <section class="skills-section">
         <h2>My Skills</h2>
-        <p>Details about your skills go here.</p>
-    </section>
+        <p>Here are some of the skills I have acquired over the years:</p>
+        
+        <!-- Skill 1 -->
+        <div class="skill-item">
+            <div class="skill-label">
+                <span>PLC Program</span>
+                <span>70%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-item">
+            <div class="skill-label">
+                <span>Scada</span>
+                <span>65%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
 
     <footer>
         <p>© 2024 My Portfolio</p>
