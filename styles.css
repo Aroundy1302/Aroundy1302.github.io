@@ -74,19 +74,6 @@ nav ul li a:hover {
     .nav-toggle {
         display: block;
     }
-
-    body {
-        font-size: 14px; /* ลดขนาดตัวอักษรสำหรับหน้าจอเล็ก */
-    }
-
-    .container {
-        padding: 10px; /* ปรับ Padding */
-    }
-
-    /* ปรับรูปแบบสำหรับ Navbar */
-    .navbar {
-        flex-direction: column; /* เปลี่ยนให้แสดงแนวตั้ง */
-    }
 }
 
 .hero-section {
@@ -132,8 +119,6 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /* Profile Image */
@@ -314,11 +299,6 @@ h2 {
     height: auto;
     border-radius: 5px; /* Rounded corners for images */
     margin-top: 10px; /* Space above the image */
-}
-
-img {
-    max-width: 100%; /* ปรับให้รูปภาพไม่เกินขนาดของ container */
-    height: auto; /* ปรับความสูงให้เหมาะสม */
 }
 
 footer {
