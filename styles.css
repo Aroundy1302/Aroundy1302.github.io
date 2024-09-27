@@ -53,6 +53,31 @@ nav ul li a:hover {
     color: #f0a500;
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: inline-block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #444;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {

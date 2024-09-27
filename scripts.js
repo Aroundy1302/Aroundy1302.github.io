@@ -6,10 +6,11 @@ function scrollToSection(sectionId) {
     }
 }
 
-// Responsive navigation menu toggle for mobile
+// Select the toggle button and the navigation menu
 const navToggle = document.querySelector('.nav-toggle');
-const navMenu = document.querySelector('nav ul');
+const navList = document.querySelector('.nav-list');
 
+// Add click event listener to the toggle button
 navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+    navList.classList.toggle('active'); // Toggle the 'active' class
 });
